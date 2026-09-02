@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marco Pasqualotto — Portfolio</title>
+<meta name="description" content="Portfolio di Marco Pasqualotto — Fotografo, Videomaker e Graphic Designer a Vicenza, Veneto.">
+<meta name="author" content="Marco Pasqualotto">
+<meta property="og:title" content="Marco Pasqualotto — Portfolio">
+<meta property="og:description" content="Fotografo, Videomaker e Graphic Designer a Vicenza, Veneto.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0e1b2c">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cur" id="c"></div>
+<div class="cr" id="cr"></div>
+
+<header id="hd">
+  <div class="logo" onclick="goHome()">Marco Pasqualotto</div>
+  <nav>
+    <a href="#" id="nav-home"     onclick="goHome();return false">Home</a>
+    <a href="#" id="nav-video"    onclick="show('video');return false">Video</a>
+    <a href="#" id="nav-foto"     onclick="show('foto');return false">Foto</a>
+    <a href="#" id="nav-grafica"  onclick="show('grafica');return false">Grafica</a>
+    <a href="#" id="nav-contatti" onclick="show('contatti');return false">Contatti</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home">
+  <div class="bgw">MARCO</div>
+  <div class="eyebrow">Fotografo · Videomaker · Graphic Designer · Vicenza, Veneto</div>
+  <h1 class="h1">Immagino.<br><em>Progetto.</em><br>Realizzo.</h1>
+  <p class="hp">Creo contenuti visivi: fotografia professionale, video, grafica e marketing digitale</p>
+  <div class="sc">Scroll<div class="sl"></div></div>
+</section>
+
+<!-- SELEZIONE LAVORI -->
+<div class="bs" id="hb">
+  <div class="bh rv"><h2>Selezione lavori</h2><p>Fotografia di prodotto, video, grafica e brand identity.</p></div>
+  <div class="bg rv">
+    <div class="bi"><img src="images/talocha-packaging.jpg" alt="Talocha packaging" loading="eager"><div class="binfo"><div class="c">Foto · Prodotto</div><div class="t">Talocha — Wine on the Rock</div></div></div>
+    <div class="bi"><img src="images/sport-corner.jpg" alt="Sport notturno" loading="lazy"><div class="binfo"><div class="c">Foto · Sport</div><div class="t">Corner notturno</div></div></div>
+    <div class="bi"><img src="images/alfa-romeo.jpg" alt="Alfa Romeo" loading="lazy"><div class="binfo"><div class="c">Foto · Evento</div><div class="t">Alfa 155 RS, Padova</div></div></div>
+    <div class="bi"><img src="images/basilica-padova.jpg" alt="Basilica" loading="lazy"><div class="binfo"><div class="c">Foto · Architettura</div><div class="t">Basilica, Padova</div></div></div>
+    <div class="bi" style="background:#fff;display:flex;align-items:center;justify-content:center;padding:28px;">
+      <img src="images/danieli-store-brand.jpg" alt="Danieli Store" style="object-fit:contain;width:100%;height:100%;">
+      <div class="binfo"><div class="c">Grafica · Brand Identity</div><div class="t">Danieli Store</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CHI SONO -->
+<div class="ab" id="ha">
+  <div class="ab-inner">
+    <div class="abt rv">
+      <h2>Creatività al servizio della tua storia</h2>
+      <p>Da più di 5 anni creo contenuti visivi professionali per aziende, eventi e privati.</p>
+      <p>Dall'ideazione alla post-produzione gestisco ogni fase: fotografia di prodotto, reportage eventi, video promozionali, animazioni e grafica pubblicitaria.</p>
+      <p>Padroneggio l'intera suite Adobe e lavoro sia in studio che on location.</p>
+      <div class="sts">
+        <div class="st"><div class="n">5+</div><div class="l">Anni di esperienza</div></div>
+        <div class="st"><div class="n">100+</div><div class="l">Progetti completati</div></div>
+        <div class="st"><div class="n">360°</div><div class="l">Produzione visiva</div></div>
+        <div class="st"><div class="n">VI</div><div class="l">Val Liona, Vicenza</div></div>
+      </div>
+    </div>
+    <div class="rv"><div class="abimg"><img src="images/profilo.jpg" alt="Marco Pasqualotto" loading="lazy"></div></div>
+  </div>
+</div>
+
+<!-- VIDEO -->
+<section id="pg-video" class="pg">
+  <div class="pgh"><h1>VIDEO</h1><p>Creazione e ideazione video promozionali o dimostrativi di prodotti/eventi</p></div>
+  <div class="vg">
+    <div class="vcard rv">
+      <div class="vf" style="aspect-ratio:16/9">
+        <div class="vthumb" onclick="playYT(this,'https://www.youtube-nocookie.com/embed/LX1DjsobYaU?autoplay=1&rel=0&modestbranding=1','16/9')">
+          <img src="https://img.youtube.com/vi/LX1DjsobYaU/maxresdefault.jpg" alt="Segnaletica interna" loading="lazy" onerror="this.src='https://img.youtube.com/vi/LX1DjsobYaU/hqdefault.jpg'">
+          <div class="vplay"><div class="pi"></div></div>
+        </div>
+      </div>
+      <div class="vm"><span class="vt">Segnaletica interna</span><span class="vc">Prodotto</span></div>
+    </div>
+    <div class="vcard rv">
+      <div class="vf" style="aspect-ratio:16/9">
+        <div class="vthumb" onclick="playYT(this,'https://www.youtube-nocookie.com/embed/juQQm_dTClA?autoplay=1&rel=0&modestbranding=1','16/9')">
+          <img src="https://img.youtube.com/vi/juQQm_dTClA/maxresdefault.jpg" alt="Targhe segnaletiche" loading="lazy" onerror="this.src='https://img.youtube.com/vi/juQQm_dTClA/hqdefault.jpg'">
+          <div class="vplay"><div class="pi"></div></div>
+        </div>
+      </div>
+      <div class="vm"><span class="vt">Targhe segnaletiche</span><span class="vc">Prodotto</span></div>
+    </div>
+    <div class="vcard rv">
+      <div class="vf" style="aspect-ratio:16/9">
+        <div class="vthumb" onclick="playYT(this,'https://www.youtube-nocookie.com/embed/4eFkabomvtw?autoplay=1&rel=0&modestbranding=1','16/9')">
+          <img src="https://img.youtube.com/vi/4eFkabomvtw/maxresdefault.jpg" alt="Griglie espositive" loading="lazy" onerror="this.src='https://img.youtube.com/vi/4eFkabomvtw/hqdefault.jpg'">
+          <div class="vplay"><div class="pi"></div></div>
+        </div>
+      </div>
+      <div class="vm"><span class="vt">Griglie espositive</span><span class="vc">Prodotto</span></div>
+    </div>
+    <div class="vcard rv">
+      <div class="vf" style="aspect-ratio:16/9">
+        <div class="vthumb" onclick="playYT(this,'https://www.youtube-nocookie.com/embed/X-I-_tqt698?autoplay=1&rel=0&modestbranding=1','16/9')">
+          <img src="https://img.youtube.com/vi/X-I-_tqt698/maxresdefault.jpg" alt="Martin O'Connor — Live" loading="lazy" onerror="this.src='https://img.youtube.com/vi/X-I-_tqt698/hqdefault.jpg'">
+          <div class="vplay"><div class="pi"></div></div>
+        </div>
+      </div>
+      <div class="vm"><span class="vt">Martin O'Connor — Live</span><span class="vc">Concerto</span></div>
+    </div>
+    <div class="vcard rv">
+      <div class="vf" style="aspect-ratio:16/9">
+        <div class="vthumb" onclick="playYT(this,'https://www.youtube-nocookie.com/embed/DCIwWlJmGMM?autoplay=1&rel=0&modestbranding=1','16/9')">
+          <img src="https://img.youtube.com/vi/DCIwWlJmGMM/maxresdefault.jpg" alt="Trailer sala comunità" loading="lazy" onerror="this.src='https://img.youtube.com/vi/DCIwWlJmGMM/hqdefault.jpg'">
+          <div class="vplay"><div class="pi"></div></div>
+        </div>
+      </div>
+      <div class="vm"><span class="vt">Trailer sala comunità</span><span class="vc">Istituzionale</span></div>
+    </div>
+    <div class="vcard-v rv">
+      <div class="vf" style="aspect-ratio:9/16">
+        <div class="vthumb" onclick="playYT(this,'https://www.youtube-nocookie.com/embed/RXjITDRfXEs?autoplay=1&rel=0&modestbranding=1','9/16')">
+          <img src="https://img.youtube.com/vi/RXjITDRfXEs/maxresdefault.jpg" alt="Stufe riscaldanti" loading="lazy" onerror="this.src='https://img.youtube.com/vi/RXjITDRfXEs/hqdefault.jpg'">
+          <div class="vplay"><div class="pi"></div></div>
+        </div>
+      </div>
+      <div class="vm"><span class="vt">Stufe riscaldanti</span><span class="vc">Social Reel</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOTO -->
+<section id="pg-foto" class="pg">
+  <div class="pgh"><h1>FOTO</h1><p>Produzione foto di prodotti, eventi, sport e azienda</p></div>
+  <div class="foto-grid">
+    <div class="foto-row">
+      <div class="fi-h rv rv" style="aspect-ratio:3/2;flex:1"><img src="images/talocha-packaging.jpg" alt="Talocha — Packaging" loading="lazy"><div class="fc"><div class="fc-c">Prodotto</div><div class="fc-t">Talocha — Packaging</div></div></div>
+      <div class="fi-h rv rv" style="aspect-ratio:3/2;flex:1"><img src="images/talocha-set.jpg" alt="Talocha — Set completo" loading="lazy"><div class="fc"><div class="fc-c">Prodotto</div><div class="fc-t">Talocha — Set completo</div></div></div>
+    </div>
+    <div class="foto-row">
+      <div class="fi-v rv rv" style="aspect-ratio:2/3;flex:2"><img src="images/talocha-bottiglia.jpg" alt="Garganega Veneto" loading="lazy"><div class="fc"><div class="fc-c">Prodotto</div><div class="fc-t">Garganega Veneto</div></div></div>
+      <div class="fi-h rv rv" style="aspect-ratio:3/2;flex:3"><img src="images/sport-corner.jpg" alt="Corner notturno" loading="lazy"><div class="fc"><div class="fc-c">Sport</div><div class="fc-t">Corner notturno</div></div></div>
+      <div class="fi-h rv rv" style="aspect-ratio:3/2;flex:3"><img src="images/sport-team.jpg" alt="Pre-partita" loading="lazy"><div class="fc"><div class="fc-c">Sport</div><div class="fc-t">Pre-partita</div></div></div>
+    </div>
+    <div class="foto-row">
+      <div class="fi-h rv rv" style="aspect-ratio:3/2;flex:1"><img src="images/alfa-romeo.jpg" alt="Alfa 155 RS" loading="lazy"><div class="fc"><div class="fc-c">Evento</div><div class="fc-t">Alfa 155 RS</div></div></div>
+      <div class="fi-h rv rv" style="aspect-ratio:3/2;flex:1"><img src="images/piazza-ragione.jpg" alt="Piazza della Ragione" loading="lazy"><div class="fc"><div class="fc-c">Architettura</div><div class="fc-t">Piazza della Ragione</div></div></div>
+    </div>
+    <div class="foto-row">
+      <div class="fi-v rv rv" style="aspect-ratio:2/3;flex:1"><img src="images/basilica-padova.jpg" alt="Basilica, Padova" loading="lazy"><div class="fc"><div class="fc-c">Architettura</div><div class="fc-t">Basilica, Padova</div></div></div>
+      <div class="fi-v rv rv" style="aspect-ratio:2/3;flex:1"><img src="images/venezia-snackbar.jpg" alt="Venezia by night" loading="lazy"><div class="fc"><div class="fc-c">Street</div><div class="fc-t">Venezia by night</div></div></div>
+      <div class="fi-h rv rv" style="aspect-ratio:3/2;flex:2.5"><img src="images/festival-backstage.jpg" alt="Backstage festival" loading="lazy"><div class="fc"><div class="fc-c">Evento</div><div class="fc-t">Backstage festival</div></div></div>
+    </div>
+    <div class="foto-row">
+      <div class="fi-v rv rv" style="aspect-ratio:2/3;flex:1"><img src="images/sport-action.jpg" alt="Azione in campo" loading="lazy"><div class="fc"><div class="fc-c">Sport</div><div class="fc-t">Azione in campo</div></div></div>
+      <div class="fi-h rv rv" style="aspect-ratio:1/1;flex:1.5"><img src="images/serata-evento.jpg" alt="Serata evento" loading="lazy"><div class="fc"><div class="fc-c">Evento</div><div class="fc-t">Serata evento</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GRAFICA -->
+<section id="pg-grafica" class="pg">
+  <div class="pgh"><h1>GRAFICA</h1><p>Progettazione e disegno grafiche, brand identity e impaginazioni</p></div>
+  <div class="gg">
+    <div class="gi wide logo-bg rv" style="background:#fff;"><img src="images/danieli-store-brand.jpg" alt="Danieli Store" loading="lazy" style="object-fit:contain;padding:20px;"><div class="gi-cap"><div class="gi-c">Brand Identity · Logo Design</div><div class="gi-t">Danieli Store</div><div class="gi-desc">Creazione e progettazione logo per sito e-commerce spagnolo</div></div></div>
+    <div class="gi logo-bg rv" style="background:#fff;"><img src="images/creazione-immagine.jpg" alt="Creazione Immagine" loading="lazy" style="object-fit:contain;padding:20px;"><div class="gi-cap"><div class="gi-c">Brand Identity · Logo Design</div><div class="gi-t">Creazione Immagine</div><div class="gi-desc">Creazione e progettazione aggiornamento logo per negozio acconciature</div></div></div>
+    <div class="gi rv"><img src="images/locandina-oconnor.jpg" alt="Locandina Mairtin O'Connor" loading="lazy" ><div class="gi-cap"><div class="gi-c">Grafica pubblicitaria</div><div class="gi-t">Locandina Mairtin O'Connor</div><div class="gi-desc">Creazione locandina spettacolo al Teatro Olimpico di Vicenza</div></div></div>
+    <div class="gi h rv"><img src="images/scheda-tecnica.jpg" alt="Scheda tecnica prodotti" loading="lazy" ><div class="gi-cap"><div class="gi-c">Impaginazione · Scheda tecnica</div><div class="gi-t">Scheda tecnica prodotti</div><div class="gi-desc">Creazione ed organizzazione schede tecniche prodotti</div></div></div>
+    <div class="gi sq rv"><img src="images/talocha-packaging.jpg" alt="Talocha — Packaging" loading="lazy" ><div class="gi-cap"><div class="gi-c">Fotografia · Prodotto</div><div class="gi-t">Talocha — Packaging</div></div></div>
+  </div>
+</section>
+
+<!-- CONTATTI -->
+<section id="pg-contatti" class="pg">
+  <div class="pgh"><h1>CONTATTI</h1><p>A vostra disposizione per ogni progetto</p></div>
+  <div class="cw">
+    <div class="ci rv">
+      <h2>Parliamo del tuo progetto</h2>
+      <p>Che si tratti di un servizio fotografico, un video promozionale o un progetto grafico, sono qui per trasformare la tua idea in realtà.</p>
+      <p style="margin-top:14px;font-size:.84rem">Rispondo entro 24 ore.</p>
+    </div>
+    <ul class="cl rv">
+      <li class="citem"><div class="cion">T</div><div class="cinfo"><div class="l">Telefono</div><div class="v"><a href="tel:+393203205625">+39 320 320 5625</a></div></div></li>
+      <li class="citem"><div class="cion">@</div><div class="cinfo"><div class="l">Email</div><div class="v"><a href="mailto:marco.pasqu.03@gmail.com">marco.pasqu.03@gmail.com</a></div></div></li>
+      <li class="citem"><div class="cion">&#9711;</div><div class="cinfo"><div class="l">Posizione</div><div class="v">Val Liona (VI), Veneto</div></div></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Marco Pasqualotto — Fotografia, Video e Graphic design, Vicenza</span>
+  <span style="font-family:'TheSeasons',serif;letter-spacing:.1em">Marco Pasqualotto</span>
+</footer>
+
+<!-- LIGHTBOX OVERLAY -->
+<div id="lb" onclick="lbClose()">
+  <button id="lb-close" onclick="event.stopPropagation();lbClose()" aria-label="Chiudi">&#x2715;</button>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+  <div id="lb-caption"></div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+
+  - name: "impostazioni"
+    label: "⚙️ Impostazioni sito"
+    files:
+      - name: "home"
+        label: "Home — Testi"
+        file: "_data/home.json"
+        fields:
+          - { label: "Titolo riga 1", name: "titolo1", widget: "string", default: "Immagino." }
+          - { label: "Titolo riga 2 (corsivo)", name: "titolo2", widget: "string", default: "Progetto." }
+          - { label: "Titolo riga 3", name: "titolo3", widget: "string", default: "Realizzo." }
+          - { label: "Sottotitolo", name: "sottotitolo", widget: "string" }
+          - { label: "Anni esperienza", name: "anni", widget: "string", default: "5+" }
+          - { label: "Progetti completati", name: "progetti", widget: "string", default: "100+" }
+
+      - name: "contatti"
+        label: "📞 Contatti"
+        file: "_data/contatti.json"
+        fields:
+          - { label: "Telefono", name: "telefono", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Posizione", name: "posizione", widget: "string" }
+          - { label: "Testo intro", name: "intro", widget: "text" }
+
+  - name: "foto"
+    label: "📷 Foto"
+    folder: "_data/foto"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Categoria", name: "categoria", widget: "select",
+          options: ["Prodotto","Sport","Evento","Architettura","Street"] }
+      - { label: "Immagine", name: "immagine", widget: "image" }
+      - { label: "Orientamento", name: "orientamento", widget: "select",
+          options: ["orizzontale","verticale","quadrata"] }
+      - { label: "Ordine", name: "ordine", widget: "number", default: 99 }
+
+  - name: "grafica"
+    label: "🎨 Grafica"
+    folder: "_data/grafica"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Categoria", name: "categoria", widget: "string" }
+      - { label: "Descrizione", name: "descrizione", widget: "text" }
+      - { label: "Immagine", name: "immagine", widget: "image" }
+      - { label: "Sfondo bianco (loghi)", name: "logo_bg", widget: "boolean", default: false }
+      - { label: "Formato", name: "formato", widget: "select",
+          options: ["verticale","quadrato","orizzontale","wide"] }
+      - { label: "Ordine", name: "ordine", widget: "number", default: 99 }
+
+  - name: "video"
+    label: "🎬 Video"
+    folder: "_data/video"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Categoria", name: "categoria", widget: "string" }
+      - { label: "Link YouTube (ID o URL completo)", name: "youtube_id", widget: "string" }
+      - { label: "Formato", name: "formato", widget: "select",
+          options: ["16/9","9/16"], default: "16/9" }
+      - { label: "Ordine", name: "ordine", widget: "number", default: 99 }
