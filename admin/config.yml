@@ -1,0 +1,63 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+locale: it
+
+collections:
+
+  - name: "foto"
+    label: "📷 Foto"
+    folder: "_data/foto"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Categoria", name: "categoria", widget: "select",
+          options: ["Prodotto","Sport","Evento","Architettura","Street"] }
+      - { label: "Immagine", name: "immagine", widget: "image" }
+      - { label: "Orientamento", name: "orientamento", widget: "select",
+          options: ["orizzontale","verticale","quadrata"] }
+      - { label: "Ordine", name: "ordine", widget: "number", default: 99 }
+
+  - name: "grafica"
+    label: "🎨 Grafica"
+    folder: "_data/grafica"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Categoria", name: "categoria", widget: "string" }
+      - { label: "Descrizione", name: "descrizione", widget: "text" }
+      - { label: "Immagine", name: "immagine", widget: "image" }
+      - { label: "Sfondo bianco (loghi)", name: "logo_bg", widget: "boolean", default: false }
+      - { label: "Formato", name: "formato", widget: "select",
+          options: ["verticale","quadrato","orizzontale","wide"] }
+      - { label: "Ordine", name: "ordine", widget: "number", default: 99 }
+
+  - name: "video"
+    label: "🎬 Video"
+    folder: "_data/video"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Categoria", name: "categoria", widget: "string" }
+      - { label: "ID Video YouTube", name: "youtube_id", widget: "string" }
+      - { label: "Formato", name: "formato", widget: "select",
+          options: ["16/9","9/16"], default: "16/9" }
+      - { label: "Ordine", name: "ordine", widget: "number", default: 99 }
+
+  - name: "contatti"
+    label: "📞 Contatti"
+    files:
+      - name: "info"
+        label: "Informazioni di contatto"
+        file: "_data/contatti.json"
+        fields:
+          - { label: "Telefono", name: "telefono", widget: "string", default: "+39 320 320 5625" }
+          - { label: "Email", name: "email", widget: "string", default: "marco.pasqu.03@gmail.com" }
+          - { label: "Posizione", name: "posizione", widget: "string", default: "Val Liona (VI), Veneto" }
